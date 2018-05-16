@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginEnd="@dimen/padding_small"
+        android:layout_marginStart="@dimen/padding_small"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small"
+        android:layout_marginBottom="@dimen/padding_small"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/instructionsViews"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+      <com.google.android.exoplayer2.ui.PlayerView
+          android:id="@+id/simplePlayer"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/poster_image_height"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginEnd="@dimen/padding_small"
+          android:layout_marginStart="@dimen/padding_small"
+          android:layout_marginLeft="@dimen/padding_small"
+          android:layout_marginRight="@dimen/padding_small"
+          android:layout_marginBottom="@dimen/padding_small"
+          android:layout_marginTop="@dimen/padding_small">
+
+      </com.google.android.exoplayer2.ui.PlayerView>
+
+
+      <ImageView
+          android:id="@+id/thumbnailImage"
+          android:layout_width="@dimen/poster_image_width"
+          android:layout_height="@dimen/poster_image_height"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginEnd="@dimen/padding_small"
+          android:layout_marginStart="@dimen/padding_small"
+          android:layout_marginLeft="@dimen/padding_small"
+          android:layout_marginRight="@dimen/padding_small"
+          android:layout_marginBottom="@dimen/padding_small"/>
+
+      <TextView
+          android:id="@+id/shortDescription"
+          style="@style/textDetails"
+          android:padding="@dimen/padding_zero"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textStyle="bold"/>
+
+      <TextView
+          android:id="@+id/description"
+          style="@style/textDetails"
+          android:padding="@dimen/padding_zero"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:scrollbars="vertical" />
+
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding_small"
+        android:layout_marginStart="@dimen/padding_small"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:layout_gravity="start"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/widget_ingredients_color"
+        android:textAllCaps="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/btn_next" />
+
+    <Button
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/padding_small"
+        android:layout_marginStart="@dimen/padding_small"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:background="@color/colorPrimary"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textColor="@color/widget_ingredients_color"
+        android:textAllCaps="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/btn_previous" />
+
+  </RelativeLayout>
+
+  </LinearLayout>
+
+
+</layout>

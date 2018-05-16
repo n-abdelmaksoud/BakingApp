@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ingredient_name"
+            android:layout_margin="@dimen/padding_small"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:textColor="@color/text_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textDetails"
+            android:padding="@dimen/padding_zero"
+            android:text="@string/label_quantity"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_thickness"
+            android:background="@color/rectangle_shape_color"
+            android:layout_marginEnd="@dimen/padding_small"
+            android:layout_marginStart="@dimen/padding_small"
+            android:layout_marginRight="@dimen/padding_small"
+            android:layout_marginLeft="@dimen/padding_small"/>
+
+
+
+    </LinearLayout>
+
+</layout>

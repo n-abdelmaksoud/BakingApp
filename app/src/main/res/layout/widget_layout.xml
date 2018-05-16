@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/widget_background">
+
+    <TextView
+        android:id="@+id/recipe_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:padding="@dimen/padding_small"
+        android:layout_marginEnd="@dimen/padding_small"
+        android:layout_marginStart="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_small"
+        android:gravity="center_horizontal"
+        android:background="@color/widget_ingredients_color"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:foreground="?android:attr/selectableItemBackground"
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"
+        tools:text="Hello"/>
+
+    <TextView
+        android:id="@+id/recipe_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_margin="@dimen/padding_small"
+        style="@style/textIngredients"
+        tools:text="Hello"/>
+
+</LinearLayout>

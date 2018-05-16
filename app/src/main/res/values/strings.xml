@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BakingApp</string>
+
+    <string name="loading_error">Oops!! Loading Error</string>
+    <string name="message_offline">No Connection</string>
+
+    <string name="label_ingredients">Ingredients</string>
+    <string name="label_steps">Steps</string>
+
+    <string name="quantity_measure">Quantity: %.1f [%s]</string>
+
+
+    <!--StepFragment-->
+    <string name="no_recipe_details">No available ingredients about this recipe</string>
+    <string name="recipe_title_steps">%s Steps</string>
+    <string name="recipe_title_instructions">%s Instructions</string>
+
+
+    <!--InstructionsFragment-->
+    <string name="label_quantity">Quantity: </string>
+    <string name="label_measure">Measure: </string>
+
+    <string name="btn_next">Next</string>
+    <string name="btn_previous">Previous</string>
+
+    <!--Menu Actions-->
+
+    <string name="action_set_widget">Set Widget</string>
+
+</resources>

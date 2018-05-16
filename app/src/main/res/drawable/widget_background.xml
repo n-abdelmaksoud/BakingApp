@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shape">
+    <stroke android:width="@dimen/widget_frame_thickness"
+        android:color="@color/colorPrimaryDark"/>
+    <solid android:color="@color/colorPrimary" />
+</shape>

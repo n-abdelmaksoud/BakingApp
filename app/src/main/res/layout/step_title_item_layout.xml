@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/textDetails"
+            tools:text= "Step one" />
+        <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_thickness"
+        android:background="@color/line_color"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginStart="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small"
+        android:layout_marginEnd="@dimen/padding_small"/>
+
+    </LinearLayout>
+
+</layout>
