@@ -28,18 +28,9 @@ public class BakingWidgetProvider extends AppWidgetProvider {
 
         for (int i = 0; i < mWidgetsNumber; i++) {
             int appWidgetId = appWidgetIds[i];
-            setWidgetViewOnClickListener(context);
             appWidgetManager.updateAppWidget(appWidgetId, getUpdatedRemoteViews(context));
         }
 
-    }
-
-    /*onClickListener not working!!*/
-    private void setWidgetViewOnClickListener(Context context) {
-        Intent intent = new Intent(context, MainActivity.class);
-        PendingIntent pendingIntent = PendingIntent.getActivity(context,0 , intent, PendingIntent.FLAG_UPDATE_CURRENT);
-        RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget_layout);
-        views.setOnClickPendingIntent(R.id.recipe_title, pendingIntent);
     }
 
     private static RemoteViews getUpdatedRemoteViews(Context context){
@@ -50,6 +41,10 @@ public class BakingWidgetProvider extends AppWidgetProvider {
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget_layout);
         views.setTextViewText(R.id.recipe_title, title);
         views.setTextViewText(R.id.recipe_ingredients, ingredients);
+
+        Intent intent = new Intent(context, MainActivity.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(context,0 , intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        views.setOnClickPendingIntent(R.id.widget_parent, pendingIntent);
         return views;
     }
 }

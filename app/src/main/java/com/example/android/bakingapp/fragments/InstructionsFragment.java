@@ -512,7 +512,7 @@ public class InstructionsFragment extends Fragment implements Player.EventListen
 * and in the paused mode our activity is eventually still visible.
 * Hence we need to wait releasing until onStop.
 * */
-/*    @Override
+    @Override
     public void onPause() {
         super.onPause();
         if (Util.SDK_INT <= 23) {
@@ -528,18 +528,14 @@ public class InstructionsFragment extends Fragment implements Player.EventListen
             releasePlayer();
             releaseMediaSession();
         }
-    }*/
 
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        Log.i(TAG , "onStop");
         unregisterReceivers();
         /// Restoring System UI if Player is on FullScreen mode
         // and user hit back button to return to StepsFragment
         if(isFullScreenPlayer) showSystemUI();
     }
+
+
 
     @Override
     public void onResume() {
@@ -551,9 +547,6 @@ public class InstructionsFragment extends Fragment implements Player.EventListen
     public void onDestroy() {
         super.onDestroy();
         Log.i(TAG , "onDestroy");
-        releasePlayer();
-        releaseMediaSession();
-
     }
 
     private void releasePlayer(){
