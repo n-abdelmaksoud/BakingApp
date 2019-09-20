@@ -1,2 +1,2 @@
 # BakingApp
-Udacity Android Developer Nanodegree Project
+Udacity Android Developer Nanodegree Project 2018
